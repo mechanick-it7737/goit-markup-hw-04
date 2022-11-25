@@ -1,0 +1,407 @@
+:root {
+    --primary-text-color: #212121;
+    --sacondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-white-text: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-image: url();
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+/*Header*/
+
+.header-flex, 
+.nav {
+    display: flex;
+    align-items: center;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo-link {
+    color: var(--accent-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.logo-word {
+    color: #000000;
+}
+
+.nav-list {
+    display: flex;
+    margin-left: 93px;
+}
+
+
+.nav-list-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+
+    text-decoration: none;
+}
+
+.nav-item {
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-list-link:hover,
+.nav-list-link:focus {
+    color: var(--accent-color);
+}
+
+.nav-list-link.current {
+    color: var(--accent-color);
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contacts 
+.contact-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--sacondary-text-color);
+
+    text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent-color);
+}
+
+.header-contacts-item + .header-contacts-item {
+    margin-left: 50px;
+}
+
+
+/*Hero*/
+.hero {
+    background-color: #2F303A;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.page-title {
+   
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+
+    color: var(--primary-white-text);
+
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.hero-button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,9px;    
+    text-align: center;
+    letter-spacing: 0.06em;
+    
+    background-color: var(--accent-color);
+    color: var(--primary-white-text);
+    border-color: var(--accent-color);
+
+    min-width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 10px 32px;
+
+
+    cursor: pointer;
+}
+
+.hero-button:active {
+    background-color: #188CE8;
+}
+ /* Tasks */
+ .task-item + .task-item {
+    margin-left: 30px;
+ }
+ .task-container {
+    display: flex;
+ }
+
+ .tasks-subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 10px;
+}
+
+.tasks-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: var(--sacondary-text-color);
+
+}
+
+ /*Work*/
+.work-example{
+    padding-top: 0;
+}
+
+.studio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 50px;
+}
+
+.work-img {
+    display: flex;
+}
+
+.work-item + .work-item {
+    margin-left: 30px;
+}
+
+/*Team*/
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-photo {
+    display: flex;
+}
+
+.team-item + .team-item {
+    margin-left: 30px;
+}
+
+.team-photo-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.team-photo-title {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    color: var(--sacondary-text-color);
+
+    padding-bottom: 30px;
+}
+
+/* Main Portfolio */
+/* Filer */
+
+:root {
+    /* --primary-text-color: #212121;
+    --sacondary-text-color: #757575;
+    --accent-color: #2196F3; */
+    --socials-block-color: #F5F4FA; 
+}
+
+.section-portfolio {
+    margin-top: 94px;
+    margin-bottom: 94px;
+
+}
+
+.filter-buttons {
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.filter-button-list {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    background-color: var(--socials-block-color);  
+    color: var(--primary-text-color); 
+    border-color: var(--socials-block-color); 
+
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    min-width: 73px;
+
+    cursor: pointer;
+}
+
+.filter-button-list:hover,
+.filter-button-list:focus {
+    background-color:var(--accent-color);
+    color: var(--primary-white-text);
+    border-color: var(--accent-color);
+}
+
+/* Project */
+.project {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.project-list {
+    width: calc((100% - 60px) /3);
+}
+
+
+.project-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+
+    margin-bottom: 4px;
+}
+
+.project-subtitle {
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.03em;
+    
+    color: var(--sacondary-text-color);
+}
+
+.project-list-link {
+    text-decoration: none;
+}
+
+.project-border {
+    border: 1px solid #EEEEEE;
+    border-top:  none;
+
+    padding: 20px 24px;
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo-word {
+    color: var(--primary-white-text);
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-white-text);
+
+    margin-top: 20px;
+}
+
+.address 
+.contact-link {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
