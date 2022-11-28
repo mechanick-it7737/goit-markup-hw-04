@@ -118,12 +118,8 @@ h1, h2, h3, h4, p {
     color: var(--accent-color);
 }
 
-.header-contacts-item:hover .contacts-icon,
-.header-contacts-item:focus .contacts-icon {
-    fill: var(--accent-color);
-}
-
 .contacts-icon {
+    
     background-position: center;
     margin-right: 10px;
     fill: currentColor;
@@ -135,6 +131,9 @@ h1, h2, h3, h4, p {
 }
 
 .contact-link {
+    display: flex;
+    align-items: center;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -217,17 +216,18 @@ h1, h2, h3, h4, p {
 }
  /* Tasks */
  .task-icon-wrap {
-    width: 270px;
     height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background-color: #F5F4FA;
 
     border-radius: 4px;
 }
 
-.tasks-icon {
-     margin: 25px 100px ;
-}  
+
 .task-item {
     max-width: 270px;
 }
